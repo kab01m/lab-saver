@@ -363,7 +363,7 @@ if Enable2:
     inst.write(':WAVeform:DATA:ALL?')
     data = inst.read_raw()
     print ("Got " + str(len (data)) + " bytes")
-    # It seem to require second call when 2nd channel is on, but the data always the same, so we dump it
+    # It seem to require second call when 2nd channel is on, but the data is always the same, so we dump it
 
 #    for i in range(15,XRes-15):
         #draw.point((i, int.from_bytes(data[29], byteorder='little', signed=False)))
